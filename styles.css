@@ -48,7 +48,6 @@ h3 { font-size: 1.25rem; margin-bottom: .55rem; }
   padding: 1rem clamp(1rem, 5vw, 5rem);
   background: var(--white);
   border-bottom: 1px solid var(--line);
-
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -276,4 +275,31 @@ code { color: var(--blue); background: #f4f4f4; padding: .1rem .25rem; overflow-
 }
 .site-footer-wrapper {
   flex-shrink: 0;
+}
+@media (max-width: 650px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  .footer-center-title {
+    position: static;
+    transform: none;
+    white-space: normal;
+    text-align: center;
+    order: 2;
+  }
+  .footer-left {
+    margin-right: 0;
+    order: 1;
+  }
+  .footer-right {
+    margin-left: 0;
+    order: 3;
+  }
+  .footer-disclaimer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
