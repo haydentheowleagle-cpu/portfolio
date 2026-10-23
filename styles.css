@@ -332,3 +332,6 @@ code { color: var(--blue); background: #f4f4f4; padding: .1rem .25rem; overflow-
     word-break: break-word;
   }
 }
+.purple-dot {
+  color: var(--blue);
+}
