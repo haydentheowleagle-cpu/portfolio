@@ -244,19 +244,23 @@ code { color: var(--blue); background: #f4f4f4; padding: .1rem .25rem; overflow-
   display: block;
 }
 .site-footer {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 .footer-center-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
+  text-align: center;
 }
 .footer-left {
-  margin-right: auto;
+  flex: 1;
+}
+.footer-center-title {
+  flex: 1;
 }
 .footer-right {
-  margin-left: auto;
+  flex: 1;
+  text-align: right;
 }
 .site-footer-wrapper {
   background: var(--ink);
@@ -283,23 +287,12 @@ code { color: var(--blue); background: #f4f4f4; padding: .1rem .25rem; overflow-
     text-align: center;
     gap: 0.75rem;
   }
-  .footer-center-title {
-    position: static;
-    transform: none;
-    white-space: normal;
-    text-align: center;
-    order: 2;
-  }
-  .footer-left {
-    margin-right: 0;
-    order: 1;
-  }
+
+  .footer-left,
+  .footer-center-title,
   .footer-right {
-    margin-left: 0;
-    order: 3;
-  }
-  .footer-disclaimer {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    flex: none;
+    width: auto;
+    text-align: center;
   }
 }
