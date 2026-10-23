@@ -307,3 +307,14 @@ code { color: var(--blue); background: #f4f4f4; padding: .1rem .25rem; overflow-
   font-weight: 700;
   color: var(--ink);
 }
+@media (max-width: 650px) {
+  .contact-details {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .contact-details a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
